@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widget_cheatsheet/ContainerPaddingPage.dart';
+import 'package:flutter_widget_cheatsheet/ContainerAlignmentPage.dart';
 
 class ContainerPage extends StatelessWidget {
   @override
@@ -16,6 +17,15 @@ class ContainerPage extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => ContainerPaddingPage()),
+              );
+            },
+          ),
+          ListTile(
+            title: Text('alignment'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => ContainerAlignmentPage()),
               );
             },
           ),
