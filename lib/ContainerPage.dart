@@ -1,28 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widget_cheatsheet/ContainerPage.dart';
+import 'package:flutter_widget_cheatsheet/ContainerPaddingPage.dart';
 
-void main() {
-  runApp(MaterialApp(
-    title: 'Navigation Basics',
-    home: FirstScreen(),
-  ));
-}
-
-class FirstScreen extends StatelessWidget {
+class ContainerPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('First Screen'),
+        title: Text('Container'),
       ),
       body: ListView(
         children: <Widget>[
           ListTile(
-            title: Text('container'),
+            title: Text('padding'),
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => ContainerPage()),
+                MaterialPageRoute(builder: (context) => ContainerPaddingPage()),
               );
             },
           ),
