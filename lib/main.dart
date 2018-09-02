@@ -10,24 +10,24 @@ void main() {
 
 class FirstScreen extends StatelessWidget {
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('First Screen'),
-      ),
-      body: ListView(
-        children: <Widget>[
-          ListTile(
-            title: Text('container'),
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => ContainerPage()),
-              );
-            },
-          ),
-        ],
-      ),
-    );
-  }
+  Widget build(BuildContext context) => Scaffold(
+        appBar: AppBar(
+          title: const Text('First Screen'),
+        ),
+        body: ListView(
+          children: <Widget>[
+            ListTile(
+              title: const Text('container'),
+              onTap: () {
+                Navigator.push<MaterialPageRoute<dynamic>>(
+                  context,
+                  MaterialPageRoute(
+                    builder: (BuildContext context) => ContainerPage(),
+                  ),
+                );
+              },
+            ),
+          ],
+        ),
+      );
 }
