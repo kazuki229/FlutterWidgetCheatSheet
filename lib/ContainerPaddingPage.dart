@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 class ContainerPaddingPage extends StatefulWidget {
   @override
-  _ContainerPaddingPageState createState() => _ContainerPaddingPageState();
+  ContainerPaddingPageState createState() => ContainerPaddingPageState();
 }
 
-class _ContainerPaddingPageState extends State<ContainerPaddingPage> {
-  EdgeInsets _padding = const EdgeInsets.all(16.0);
+class ContainerPaddingPageState extends State<ContainerPaddingPage> {
+  EdgeInsets padding = const EdgeInsets.all(16.0);
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class _ContainerPaddingPageState extends State<ContainerPaddingPage> {
       body: Stack(
         children: <Widget>[
           Container(
-            padding: _padding,
+            padding: padding,
             alignment: Alignment.center,
             color: Colors.blueGrey,
             child: Container(
@@ -39,7 +39,7 @@ class _ContainerPaddingPageState extends State<ContainerPaddingPage> {
                         child: Text('all'),
                         onPressed: () {
                           setState(() {
-                            _padding = const EdgeInsets.all(16.0);
+                            padding = const EdgeInsets.all(16.0);
                           });
                         },
                       ),
@@ -47,7 +47,7 @@ class _ContainerPaddingPageState extends State<ContainerPaddingPage> {
                         child: Text('symmetric'),
                         onPressed: () {
                           setState(() {
-                            _padding =
+                            padding =
                                 const EdgeInsets.symmetric(vertical: 32.0);
                           });
                         },
@@ -61,7 +61,7 @@ class _ContainerPaddingPageState extends State<ContainerPaddingPage> {
                         child: Text('only'),
                         onPressed: () {
                           setState(() {
-                            _padding = const EdgeInsets.only(
+                            padding = const EdgeInsets.only(
                               left: 16.0,
                             );
                           });
@@ -71,7 +71,7 @@ class _ContainerPaddingPageState extends State<ContainerPaddingPage> {
                         child: Text('fromLTRB'),
                         onPressed: () {
                           setState(() {
-                            _padding = const EdgeInsets.fromLTRB(
+                            padding = const EdgeInsets.fromLTRB(
                                 8.0, 16.0, 24.0, 32.0);
                           });
                         },

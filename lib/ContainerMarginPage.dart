@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 class ContainerMarginPage extends StatefulWidget {
   @override
-  _ContainerMarginPageState createState() => _ContainerMarginPageState();
+  ContainerMarginPageState createState() => ContainerMarginPageState();
 }
 
-class _ContainerMarginPageState extends State<ContainerMarginPage> {
-  EdgeInsets _margin = const EdgeInsets.all(16.0);
+class ContainerMarginPageState extends State<ContainerMarginPage> {
+  EdgeInsets margin = const EdgeInsets.all(16.0);
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class _ContainerMarginPageState extends State<ContainerMarginPage> {
         children: <Widget>[
           Container(
             padding: const EdgeInsets.all(16.0),
-            margin: _margin,
+            margin: margin,
             color: Colors.blueGrey,
             child: Container(
               color: Colors.green,
@@ -46,7 +46,7 @@ class _ContainerMarginPageState extends State<ContainerMarginPage> {
                           ),
                           onPressed: () {
                             setState(() {
-                              _margin = const EdgeInsets.all(16.0);
+                              margin = const EdgeInsets.all(16.0);
                             });
                           },
                         ),
@@ -61,7 +61,7 @@ class _ContainerMarginPageState extends State<ContainerMarginPage> {
                           ),
                           onPressed: () {
                             setState(() {
-                              _margin =
+                              margin =
                                   const EdgeInsets.symmetric(vertical: 32.0);
                             });
                           },
@@ -82,7 +82,7 @@ class _ContainerMarginPageState extends State<ContainerMarginPage> {
                           ),
                           onPressed: () {
                             setState(() {
-                              _margin = const EdgeInsets.only(
+                              margin = const EdgeInsets.only(
                                 left: 16.0,
                               );
                             });
@@ -99,7 +99,7 @@ class _ContainerMarginPageState extends State<ContainerMarginPage> {
                           ),
                           onPressed: () {
                             setState(() {
-                              _margin = const EdgeInsets.fromLTRB(
+                              margin = const EdgeInsets.fromLTRB(
                                   8.0, 16.0, 24.0, 32.0);
                             });
                           },

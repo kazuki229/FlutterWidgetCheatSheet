@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 class ContainerAlignmentPage extends StatefulWidget {
   @override
-  _ContainerAlignmentPageState createState() => _ContainerAlignmentPageState();
+  ContainerAlignmentPageState createState() => ContainerAlignmentPageState();
 }
 
-class _ContainerAlignmentPageState extends State<ContainerAlignmentPage> {
-  Alignment _alignment = Alignment.center;
+class ContainerAlignmentPageState extends State<ContainerAlignmentPage> {
+  Alignment alignment = Alignment.center;
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class _ContainerAlignmentPageState extends State<ContainerAlignmentPage> {
       body: Stack(
         children: <Widget>[
           Container(
-            alignment: _alignment,
+            alignment: alignment,
             color: Colors.blueGrey,
             child: Container(
               height: 100.0,
@@ -47,7 +47,7 @@ class _ContainerAlignmentPageState extends State<ContainerAlignmentPage> {
                           ),
                           onPressed: () {
                             setState(() {
-                              _alignment = Alignment.topLeft;
+                              alignment = Alignment.topLeft;
                             });
                           },
                         ),
@@ -62,7 +62,7 @@ class _ContainerAlignmentPageState extends State<ContainerAlignmentPage> {
                           ),
                           onPressed: () {
                             setState(() {
-                              _alignment = Alignment.topCenter;
+                              alignment = Alignment.topCenter;
                             });
                           },
                         ),
@@ -77,7 +77,7 @@ class _ContainerAlignmentPageState extends State<ContainerAlignmentPage> {
                           ),
                           onPressed: () {
                             setState(() {
-                              _alignment = Alignment.topRight;
+                              alignment = Alignment.topRight;
                             });
                           },
                         ),
@@ -97,7 +97,7 @@ class _ContainerAlignmentPageState extends State<ContainerAlignmentPage> {
                           ),
                           onPressed: () {
                             setState(() {
-                              _alignment = Alignment.centerLeft;
+                              alignment = Alignment.centerLeft;
                             });
                           },
                         ),
@@ -112,7 +112,7 @@ class _ContainerAlignmentPageState extends State<ContainerAlignmentPage> {
                           ),
                           onPressed: () {
                             setState(() {
-                              _alignment = Alignment.center;
+                              alignment = Alignment.center;
                             });
                           },
                         ),
@@ -127,7 +127,7 @@ class _ContainerAlignmentPageState extends State<ContainerAlignmentPage> {
                           ),
                           onPressed: () {
                             setState(() {
-                              _alignment = Alignment.centerRight;
+                              alignment = Alignment.centerRight;
                             });
                           },
                         ),
@@ -147,7 +147,7 @@ class _ContainerAlignmentPageState extends State<ContainerAlignmentPage> {
                           ),
                           onPressed: () {
                             setState(() {
-                              _alignment = Alignment.bottomLeft;
+                              alignment = Alignment.bottomLeft;
                             });
                           },
                         ),
@@ -162,7 +162,7 @@ class _ContainerAlignmentPageState extends State<ContainerAlignmentPage> {
                           ),
                           onPressed: () {
                             setState(() {
-                              _alignment = Alignment.bottomCenter;
+                              alignment = Alignment.bottomCenter;
                             });
                           },
                         ),
@@ -177,7 +177,7 @@ class _ContainerAlignmentPageState extends State<ContainerAlignmentPage> {
                           ),
                           onPressed: () {
                             setState(() {
-                              _alignment = Alignment.bottomRight;
+                              alignment = Alignment.bottomRight;
                             });
                           },
                         ),
