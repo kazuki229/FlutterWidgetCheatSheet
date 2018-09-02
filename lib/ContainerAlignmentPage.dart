@@ -30,7 +30,8 @@ class _ContainerAlignmentPageState extends State<ContainerAlignmentPage> {
             right: 0.0,
             left: 0.0,
             child: Container(
-              padding: const EdgeInsets.only(left: 16.0, right: 16.0, bottom: 120.0),
+              padding:
+                  const EdgeInsets.only(left: 16.0, right: 16.0, bottom: 120.0),
               child: Column(
                 children: <Widget>[
                   Row(

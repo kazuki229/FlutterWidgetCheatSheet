@@ -29,7 +29,8 @@ class _ContainerMarginPageState extends State<ContainerMarginPage> {
             right: 0.0,
             left: 0.0,
             child: Container(
-              padding: const EdgeInsets.only(left: 16.0, right: 16.0, bottom: 120.0),
+              padding:
+                  const EdgeInsets.only(left: 16.0, right: 16.0, bottom: 120.0),
               child: Column(
                 children: <Widget>[
                   Row(
@@ -45,7 +46,7 @@ class _ContainerMarginPageState extends State<ContainerMarginPage> {
                           ),
                           onPressed: () {
                             setState(() {
-                              _margin =  const EdgeInsets.all(16.0);
+                              _margin = const EdgeInsets.all(16.0);
                             });
                           },
                         ),
@@ -60,7 +61,8 @@ class _ContainerMarginPageState extends State<ContainerMarginPage> {
                           ),
                           onPressed: () {
                             setState(() {
-                              _margin = const EdgeInsets.symmetric(vertical: 32.0);
+                              _margin =
+                                  const EdgeInsets.symmetric(vertical: 32.0);
                             });
                           },
                         ),
@@ -97,7 +99,8 @@ class _ContainerMarginPageState extends State<ContainerMarginPage> {
                           ),
                           onPressed: () {
                             setState(() {
-                              _margin = const EdgeInsets.fromLTRB(8.0, 16.0, 24.0, 32.0);
+                              _margin = const EdgeInsets.fromLTRB(
+                                  8.0, 16.0, 24.0, 32.0);
                             });
                           },
                         ),

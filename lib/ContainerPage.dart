@@ -26,7 +26,8 @@ class ContainerPage extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => ContainerAlignmentPage()),
+                MaterialPageRoute(
+                    builder: (context) => ContainerAlignmentPage()),
               );
             },
           ),

@@ -47,7 +47,8 @@ class _ContainerPaddingPageState extends State<ContainerPaddingPage> {
                         child: Text('symmetric'),
                         onPressed: () {
                           setState(() {
-                            _padding = const EdgeInsets.symmetric(vertical: 32.0);
+                            _padding =
+                                const EdgeInsets.symmetric(vertical: 32.0);
                           });
                         },
                       ),
@@ -70,7 +71,8 @@ class _ContainerPaddingPageState extends State<ContainerPaddingPage> {
                         child: Text('fromLTRB'),
                         onPressed: () {
                           setState(() {
-                            _padding = const EdgeInsets.fromLTRB(8.0, 16.0, 24.0, 32.0);
+                            _padding = const EdgeInsets.fromLTRB(
+                                8.0, 16.0, 24.0, 32.0);
                           });
                         },
                       ),
