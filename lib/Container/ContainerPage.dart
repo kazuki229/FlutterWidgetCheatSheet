@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_widget_cheatsheet/ContainerAlignmentPage.dart';
-import 'package:flutter_widget_cheatsheet/ContainerConstraintsPage.dart';
-import 'package:flutter_widget_cheatsheet/ContainerMarginPage.dart';
-import 'package:flutter_widget_cheatsheet/ContainerPaddingPage.dart';
+import 'package:flutter_widget_cheatsheet/Container/ContainerAlignmentPage.dart';
+import 'package:flutter_widget_cheatsheet/Container/ContainerConstraintsExpand.dart';
+import 'package:flutter_widget_cheatsheet/Container/ContainerConstraintsPage.dart';
+import 'package:flutter_widget_cheatsheet/Container/ContainerMarginPage.dart';
+import 'package:flutter_widget_cheatsheet/Container/ContainerPaddingPage.dart';
 
 class ContainerPage extends StatelessWidget {
   @override
@@ -53,6 +54,19 @@ class ContainerPage extends StatelessWidget {
                   MaterialPageRoute(
                     builder: (BuildContext context) =>
                         ContainerConstraintsPage(),
+                  ),
+                );
+              },
+            ),
+            ListTile(
+              title: const Text('constraints expand'),
+              onTap: () {
+                Navigator.push<
+                    MaterialPageRoute<ContainerConstraintsExpandPage>>(
+                  context,
+                  MaterialPageRoute(
+                    builder: (BuildContext context) =>
+                        ContainerConstraintsExpandPage(),
                   ),
                 );
               },
