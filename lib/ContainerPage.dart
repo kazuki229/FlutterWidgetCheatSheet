@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widget_cheatsheet/ContainerAlignmentPage.dart';
+import 'package:flutter_widget_cheatsheet/ContainerConstraintsPage.dart';
 import 'package:flutter_widget_cheatsheet/ContainerMarginPage.dart';
 import 'package:flutter_widget_cheatsheet/ContainerPaddingPage.dart';
-import 'package:flutter_widget_cheatsheet/ContainerAlignmentPage.dart';
 
 class ContainerPage extends StatelessWidget {
   @override
@@ -14,7 +15,7 @@ class ContainerPage extends StatelessWidget {
             ListTile(
               title: const Text('padding'),
               onTap: () {
-                Navigator.push<MaterialPageRoute<dynamic>>(
+                Navigator.push<MaterialPageRoute<ContainerPaddingPage>>(
                   context,
                   MaterialPageRoute(
                     builder: (BuildContext context) => ContainerPaddingPage(),
@@ -25,7 +26,7 @@ class ContainerPage extends StatelessWidget {
             ListTile(
               title: const Text('alignment'),
               onTap: () {
-                Navigator.push<MaterialPageRoute<dynamic>>(
+                Navigator.push<MaterialPageRoute<ContainerAlignmentPage>>(
                   context,
                   MaterialPageRoute(
                     builder: (BuildContext context) => ContainerAlignmentPage(),
@@ -36,10 +37,22 @@ class ContainerPage extends StatelessWidget {
             ListTile(
               title: const Text('margin'),
               onTap: () {
-                Navigator.push<MaterialPageRoute<dynamic>>(
+                Navigator.push<MaterialPageRoute<ContainerMarginPage>>(
                   context,
                   MaterialPageRoute(
                     builder: (BuildContext context) => ContainerMarginPage(),
+                  ),
+                );
+              },
+            ),
+            ListTile(
+              title: const Text('constraints'),
+              onTap: () {
+                Navigator.push<MaterialPageRoute<ContainerConstraintsPage>>(
+                  context,
+                  MaterialPageRoute(
+                    builder: (BuildContext context) =>
+                        ContainerConstraintsPage(),
                   ),
                 );
               },

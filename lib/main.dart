@@ -19,7 +19,7 @@ class FirstScreen extends StatelessWidget {
             ListTile(
               title: const Text('container'),
               onTap: () {
-                Navigator.push<MaterialPageRoute<dynamic>>(
+                Navigator.push<MaterialPageRoute<ContainerPage>>(
                   context,
                   MaterialPageRoute(
                     builder: (BuildContext context) => ContainerPage(),
